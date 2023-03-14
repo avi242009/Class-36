@@ -13,7 +13,7 @@ function setup(){
   Ball.shapeColor = "red";
 
   ballPosition = database.ref('ball/position');
-  ballPosition.on("value",readPosition)
+  ballPosition.on("value",readPosition,showError)
 
 }
 
